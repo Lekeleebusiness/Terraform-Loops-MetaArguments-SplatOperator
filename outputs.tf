@@ -18,14 +18,14 @@ output "for_output_map2" {
 
 
 # Output Legacy Splat Operator (latest) - Returns the List
-output "legacy_splat_instance_publicdns" {
-  description = "Legacy Splat Expression"
-  value = aws_instance.myec2vm.*.public_dns
-}  
+# output "legacy_splat_instance_publicdns" {
+#   description = "Legacy Splat Expression"
+#   value = aws_instance.myec2vm.*.public_dns
+# }  
 
 # Output Latest Generalized Splat Operator - Returns the List
-output "latest_splat_instance_publicdns" {
-  description = "Generalized Splat Expression"
-  value = aws_instance.myec2vm[*].public_dns
-}
+# output "latest_splat_instance_publicdns" {
+#   description = "Generalized Splat Expression"
+#   value = aws_instance.myec2vm[*].public_dns
+# }
 
